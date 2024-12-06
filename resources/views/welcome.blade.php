@@ -59,7 +59,6 @@
         {{-- <div id="app"></div> --}}
 
         <div id="wrapper">
-        
             <!-- Top Bar Start -->
             <div class="topbar">
                 <!-- LOGO -->
@@ -267,52 +266,7 @@
                                 </ul>
                             </li>
 
-                            <li class="has_sub">
-                                <a href="#" class="waves-effect"><i class="md md-place"></i><span> Maps </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="gmap.html"> Google Map</a></li>
-                                    <li><a href="vector-map.html"> Vector Map</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="has_sub">
-                                <a href="#" class="waves-effect"><i class="md md-pages"></i><span> Pages </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                                <ul class="list-unstyled">
-                                    <li><a href="profile.html">Profile</a></li>
-                                    <li><a href="timeline.html">Timeline</a></li>
-                                    <li><a href="invoice.html">Invoice</a></li>
-                                    <li><a href="email-template.html">Email template</a></li>
-                                    <li><a href="contact.html">Contact-list</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="recoverpw.html">Recover Password</a></li>
-                                    <li><a href="lock-screen.html">Lock Screen</a></li>
-                                    <li><a href="blank.html">Blank Page</a></li>
-                                    <li><a href="maintenance.html">Maintenance</a></li>
-                                    <li><a href="coming-soon.html">Coming-soon</a></li>
-                                    <li><a href="404.html">404 Error</a></li>
-                                    <li><a href="404_alt.html">404 alt</a></li>
-                                    <li><a href="500.html">500 Error</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="md md-share"></i><span>Multi Level </span><span class="pull-right"><i class="md md-add"></i></span></a>
-                                <ul>
-                                    <li class="has_sub">
-                                        <a href="javascript:void(0);" class="waves-effect"><span>Menu Level 1.1</span> <span class="pull-right"><i class="md md-add"></i></span></a>
-                                        <ul style="">
-                                            <li><a href="javascript:void(0);"><span>Menu Level 2.1</span></a></li>
-                                            <li><a href="javascript:void(0);"><span>Menu Level 2.2</span></a></li>
-                                            <li><a href="javascript:void(0);"><span>Menu Level 2.3</span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);"><span>Menu Level 1.2</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                          </ul>
                         <div class="clearfix"></div>
                     </div>
                     <div class="clearfix"></div>
@@ -327,10 +281,10 @@
             <!-- ============================================================== -->                      
             <div class="content-page">
                 <!-- Start content -->
-                <div id="app">
-                    <div class="container">
-
-                       </div> <!-- container -->
+                <div class="content">
+                    <div id="app" class="container">
+                        
+                    </div> <!-- container -->
                                
                 </div> <!-- content -->
 
@@ -482,14 +436,14 @@
     <script src="{{ asset('backend/assets/sweet-alert/sweet-alert.init.js') }}"></script>
 
     <!-- flot Chart -->
-    <script src="{{ asset('backend/assets/flot-chart/jquery.flot.js') }}"></script>
+    {{-- <script src="{{ asset('backend/assets/flot-chart/jquery.flot.js') }}"></script>
     <script src="{{ asset('backend/assets/flot-chart/jquery.flot.time.js') }}"></script>
     <script src="{{ asset('backend/assets/flot-chart/jquery.flot.tooltip.min.js') }}"></script>
     <script src="{{ asset('backend/assets/flot-chart/jquery.flot.resize.js') }}"></script>
     <script src="{{ asset('backend/assets/flot-chart/jquery.flot.pie.js') }}"></script>
     <script src="{{ asset('backend/assets/flot-chart/jquery.flot.selection.js') }}"></script>
     <script src="{{ asset('backend/assets/flot-chart/jquery.flot.stack.js') }}"></script>
-    <script src="{{ asset('backend/assets/flot-chart/jquery.flot.crosshair.js') }}"></script>
+    <script src="{{ asset('backend/assets/flot-chart/jquery.flot.crosshair.js') }}"></script> --}}
 
     <!-- Counter-up -->
     <script src="{{ asset('backend/assets/counterup/waypoints.min.js') }}" type="text/javascript"></script>
@@ -499,7 +453,7 @@
     <script src="{{ asset('backend/js/jquery.app.js') }}"></script>
 
     <!-- Dashboard -->
-    <script src="{{ asset('backend/js/jquery.dashboard.js') }}"></script>
+    {{-- <script src="{{ asset('backend/js/jquery.dashboard.js') }}"></script> --}}
 
     <!-- Chat -->
     <script src="{{ asset('backend/js/jquery.chat.js') }}"></script>
