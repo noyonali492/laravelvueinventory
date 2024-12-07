@@ -283,7 +283,7 @@
                 <!-- Start content -->
                 <div class="content">
                     <div id="app" class="container">
-                        
+                    
                     </div> <!-- container -->
                                
                 </div> <!-- content -->

@@ -11,21 +11,32 @@
                 <form class="form-horizontal m-t-20" action="index.html">
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control input-lg" type="email" required="" placeholder="Email">
+                            <label>Full Name</label>
+                            <input class="form-control input-lg" type="email" required="" placeholder="Full Name">
                         </div>
                     </div>
                     
-                    <div class="form-group ">
+                    <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control input-lg" type="text" required="" placeholder="Username">
+                            <label> E-mail</label>
+                            <input class="form-control input-lg" type="email" required="" placeholder="Email">
                         </div>
                     </div>
 
                     <div class="form-group">
+                        <label>Password</label>
                         <div class="col-xs-12">
                             <input class="form-control input-lg" type="password" required="" placeholder="Password">
                         </div>
                     </div>
+                    
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <label>Confirm Password</label>
+                            <input class="form-control input-lg" type="password" required="" placeholder="Password">
+                        </div>
+                    </div>
+                    
 
                     <div class="form-group ">
                         <div class="col-xs-12">
