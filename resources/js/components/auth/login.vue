@@ -8,17 +8,17 @@
 
 
                 <div class="panel-body">
-                <form class="form-horizontal m-t-20" action="index.html">
+                <form class="form-horizontal m-t-20" @submit.prevent="login" >
                     
                     <div class="form-group ">
                         <div class="col-xs-12">
-                            <input class="form-control input-lg " type="text" required="" placeholder="Username">
+                            <input type="email" v-model="form.email" class="form-control input-lg " required="" placeholder="E-mail">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input class="form-control input-lg" type="password" required="" placeholder="Password">
+                            <input class="form-control input-lg" type="password" v-model="form.password" required="" placeholder="Password">
                         </div>
                     </div>
 
@@ -58,7 +58,28 @@
 </template>
 
 <script>
+import axios from 'axios';
+import { error } from 'jquery';
 
+export default {
+  data() {
+    return {
+      form: {
+        email: null,
+        password: null,
+      },
+    };
+  },
+  methods: {
+    login() {
+        axios.post('/api/auth/login',this.form)
+        .then(res=>console.log(res.data))
+        .catch(error=>console.log(error.response.data))
+      // Replace alert with your desired login logic
+     // alert(`Email: ${this.form.email}\nPassword: ${this.form.password}`);
+    },
+  },
+};
 </script>
 
 

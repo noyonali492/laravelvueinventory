@@ -12,10 +12,10 @@ class AuthController extends Controller
     //     $this->middleware('auth:api', ['except' => ['login']]);  // 'auth:api' middleware
     // }
 
-    public function __construct()
-    {
-        $this->middleware('JWT');  // 'auth:api' middleware
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('JWT');  // 'auth:api' middleware
+    // }
 
     public function login(Request $request)
     {
@@ -25,7 +25,7 @@ class AuthController extends Controller
             return $this->respondWithToken($token);
         }
 
-        return response()->json(['message' => 'Invalid credentials'], 401);
+        return response()->json(['message' => 'Invalid Email & Password'], 401);
     }
 
     public function me()
